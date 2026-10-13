@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPP 2177 – Neurofibroma imaging</title>
+<meta name="description" content="Papers, video demos and code of the DFG SPP 2177 project on MRI radiomics for neurofibromas in NF1 (University Medical Center Hamburg-Eppendorf).">
+<style>
+  :root {
+    --blue: #004894;
+    --blue-soft: #e3e5f3;
+    --text: #1d1d1f;
+    --muted: #55585f;
+    --card: #ffffff;
+    --bg: #f4f5fa;
+    --border: #d5d9ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --blue: #8db4ff;
+      --blue-soft: #1d2740;
+      --text: #ecedf2;
+      --muted: #a9adb8;
+      --card: #171a22;
+      --bg: #0f1117;
+      --border: #2c3243;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Calibri, Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 48px; }
+  header { margin-bottom: 28px; }
+  .eyebrow { color: var(--blue); font-weight: 600; font-size: 14px; letter-spacing: .02em; margin: 0 0 6px; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 10px; }
+  .lead { color: var(--muted); margin: 0; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--blue); margin: 36px 0 12px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 18px 16px;
+    margin-bottom: 14px;
+  }
+  .card h3 { font-size: 18px; line-height: 1.35; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600; font-size: 15px;
+    min-height: 44px;
+  }
+  .btn.primary { background: var(--blue); color: var(--card); }
+  .btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 8px; }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">DFG SPP 2177 · Project 515277218</p>
+    <h1>MRI radiomics-based long-term evaluation and identification of imaging biomarkers for growth prediction of distinct nodular lesions in plexiform neurofibromas in NF1</h1>
+    <p class="lead">Georgii Kolokolnikov, Inka Ristow, René Werner · University Medical Center Hamburg-Eppendorf</p>
+  </header>
+
+  <h2>Papers, video demos and code</h2>
+
+  <article class="card">
+    <h3>Anatomy-informed deep learning and radiomics for neurofibroma segmentation in whole-body MRI</h3>
+    <p class="meta">Computerized Medical Imaging and Graphics, 2025 · automated NF segmentation</p>
+    <div class="links">
+      <a class="btn primary" href="https://www.sciencedirect.com/science/article/pii/S0895611125001764">Paper</a>
+      <a class="btn" href="https://ars.els-cdn.com/content/image/1-s2.0-S0895611125001764-mmc1.mp4">Video demo</a>
+      <a class="btn" href="https://github.com/IPMI-ICNS-UKE/NFSegmentationPipeline">Code</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <h3>MOIS-SAM2: Exemplar-based segment anything model 2 for multi-lesion interactive segmentation of neurofibromas in whole-body MRI</h3>
+    <p class="meta">Computers in Biology and Medicine, 2026 · interactive NF segmentation</p>
+    <div class="links">
+      <a class="btn primary" href="https://www.sciencedirect.com/science/article/pii/S0010482525017767">Paper</a>
+      <a class="btn" href="https://ars.els-cdn.com/content/image/1-s2.0-S0010482525017767-mmc1.mp4">Video demo</a>
+      <a class="btn" href="https://github.com/IPMI-ICNS-UKE/MOIS_SAM2_NF">Code</a>
+    </div>
+  </article>
+
+  <article class="card">
+    <h3>Deep Radiomics with DINOv3 for MRI-based Differentiation of Peripheral Nerve Sheath Tumors in Neurofibromatosis Type 1</h3>
+    <p class="meta">Bildverarbeitung für die Medizin (BVM) 2026, Springer · deep radiomics</p>
+    <div class="links">
+      <a class="btn primary" href="https://link.springer.com/chapter/10.1007/978-3-658-51100-5_48">Paper</a>
+    </div>
+  </article>
+
+  <footer>
+    <p>This work was supported by the German Research Foundation (DFG SPP 2177, project number 515277218) and the German lay organisation “Bundesverband Neurofibromatose e. V.”</p>
+    <p>Institute for Applied Medical Informatics, Institute of Computational Neuroscience, and Department of Diagnostic and Interventional Radiology and Nuclear Medicine, University Medical Center Hamburg-Eppendorf.</p>
+  </footer>
+</main>
+</body>
+</html>
